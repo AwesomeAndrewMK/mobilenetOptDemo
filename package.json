@@ -4,14 +4,15 @@
   "private": true,
   "scripts": {
     "android": "react-native run-android",
-    "ios": "react-native run-ios",
+    "ios": "react-native run-ios --simulator=\"iPhone SE (3rd generation) - iOS 18.2\"",
     "lint": "eslint .",
-    "start": "react-native start",
+    "start": "react-native start --reset-cache --client-logs",
     "test": "jest"
   },
   "dependencies": {
     "react": "19.0.0",
-    "react-native": "0.79.2"
+    "react-native": "0.79.2",
+    "react-native-fast-tflite": "^1.6.1"
   },
   "devDependencies": {
     "@babel/core": "^7.25.2",
